@@ -1,0 +1,221 @@
+\documentclass[a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textgreek}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[a4paper,left=2cm,right=2cm]{geometry}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+
+\begin{document}
+\chapter{Introduction}
+
+In recent times, the main purpose among the space community has switched from winning the space race to understanding how to best exploit all space opportunities. To this end, the number of geostationary satellites is exponentially increased to meet the vast demand of the market. In this context, the space industries have embarked on a process of progressive reduction of the satellites' dimensions, in order to be able to launch a higher number of payloads with the same launcher, reducing their per capita price. One of the systems most affected by this miniaturization process is the propulsive system. In fact, to reduce the size of it, is not sufficient to simply scale the components, but it is also necessary to simplify all the plant removing the redundant parts and choosing propulsive solutions which do not require too much complexity.\\
+Up to now, the most common solution adopted is the chemical propulsion, and, among all the possibilities, the liquid technology is the more diffused thanks to its possibility of reignition, even if some solid systems have been proposed. Clearly other options beyond the chemical propulsion have been developed and tested, but are currently under development and are not widely assumed as an established technology. The starting point at the basis of these alternatives is that these small satellites do not require tons of newton thrust, because the principal scope of their propulsive plant is just to correct their trajectory or modify their attitude and, for this reason, they are called \textit{microthrusters}. The solutions proposed range from the pure electric propulsion (in all its faceting like plasma or electrospray), to electrothermal propulsion, like resistojets, to cold gas propulsion; but, as said, they are not ready technologies and probably will be a consistent part of future research. \\%{CITA MICROMACHINES-10-00818}
+Returning to the proven technology, as already said, the most popular option is the liquid one and, in order to follow the principle of "the simplest the better", monopropellant are the favorites. These are chemical compounds which release energy through exothermic chemical decomposition. In other words, they can be interpreted as a propellant stored in a single tank, and are able to decompose only by the help of a catalyst or other ignition methods. \\ %{CITA REVIEW OF STATE OF ART GREEN MONOPROPELLANTS FOR PROPULSION SYSTEMS ANALYST AND DESIGNER}
+
+%{INSERISCI IMMAGINE TREND SATELLITI NONMIRICORDODAQUALEARTICOLOMAESISTECERCALA}
+
+
+\section{Hydrazine}
+%{CITA https://eurospace.org/asd-eurospace-reinforces-reach-exemption-position-for-hydrazine-and-other-liquid-propellants/}
+Hydrazine has been for almost six decades the most popular monopropellant for in-space applications thanks to its high-performance characteristics, despite its serious collateral effects both in terms of human health and environmental protection. \\
+Even if it is a nitrogen compound (its formula bruta is $N_2O_4$) its behavior and physical properties are very close to the water ones: in fact, it is colorless, its freezing point is at 275,15 K, its boiling point is at 387,15K and also the viscosity is very close, with a value of 9e-6 $\frac{m^2}{s}$. On the opposite side, one of the most evident differences between water and hydrazine is the smell, in fact, hydrazine smells more like ammonia, while water does not have any smell. \\
+\[
+\begin{tabular}{|c|c|c|}
+\hline
+ & water & hydrazine\\
+\hline
+viscosity [mPa *s] & 1.002  & 0.974 \\
+\hline
+freezing point [K] & 273.15 & 275.15 \\
+\hline
+boiling point [K] & 373.15 & 387.15\\
+\hline 
+density [kg/$m^3$] & 997 & 1000\\
+\hline 
+\end{tabular}
+\]
+\vspace{0.5 cm}
+
+Due to a series of its peculiar characteristics, hydrazine perfectly fit the main requirements of space propulsion applications: it has one of the highest values of specific impulse ($I_s$=339 s which decreases to a value of $I_s$=290 s at sea level) %{CITA IL POSTO DA CUI HAI PRESO QUESTI NUMERI} 
+and presents a very high level of stability. It is possible to find hydrazine in three different versions, pure hydrazine, Monomethilhydrazine (MMH) and Unsymmetrical Dimethilhydrazine (UDMH) and all of them can be used both as a monopropellant, as anticipated, and also in a hypergolic bi-propellant system. In the first case, hydrazine is injected in the combustion chamber at ambient temperature, passes through a catalyst where it decomposes in nitrogen, ammonia and oxygen and the thrust is produced by the expulsion of these gases through the nozzle. On the other side, if hydrazine is used in a bi-propellant system , it plays the role of strong reducer which reacts hypergolically with other compounds (which can be liquid oxygen, nitrogen tetroxide, or red-fuming nitric acid), avoiding in this way the necessity of a spark plug igniter. \\ 
+Regardless of the version chosen or how it is used, it always has one of the highest volumetric specific impulse reachable and it is one of the most stable compounds available on the market, at the point that it could be loaded on a satellite with a life cycle of decades and do not encounter any kind of dissociation. For all these reasons it has been used for decades and still today it is difficult to find a valid substitute. \\ %{CITA "EVISED SPACE INDUSTRY POSITION 2020: EXEMPTION OF PROPELLANT-RELATED USE OF HYDRAZINE AND OTHER LIQUID PROPELLANTS FROM THE REACH AUTHORISATION REQUIREMENT"}
+Unfortunately, the drawbacks deriving by the use of hydrazine are at least as many as the advantages, mostly in terms of environmental issues and human health, but also in economical terms. Up to now, the question on the long-term environmental impact and the consequences that the use of hydrazine have on public health have not been widely investigated and so limited literature is available on the topic. From the few analysis conducted, is it possible to evince that hormonal and blood disorders have been noticed among the population which permanently lives around the popular Baikonur (Kazakhstan) launch site, and in children these values are reported to be over twice the regional average. %{CITA LA FONTE}
+Moreover, hydrazine which spills out from the rockets' stages falls on the ground, poisoning the soil for decades. These for what regards the long-term health diseases. There are also more immediate issues that come from the direct exposure to high levels of pure hydrazine, like irritation of the eyes, nose, throat and all the respiratory system in general. In addition to that, the user can encounter other symptoms like dizzines, headache, nausea, pulmonary edema, seizures, damage to liver, kidneys and central nervous system until reaching, in worst cases, a coma. Studies have also found a connection between the use of hydrazine and diseases to lungs, liver, spleen and thyroid in animals. It is also a corrosive liquid, so the direct contact with human skin could lead to serious dermatitis and chemical burns. Due to all these reasons EPA (U.S. Environmental Protection Agency) classified hydrazine as a B2 group compound, that means "Probable Human Carcinogen". \\
+It is easy to understand the level of attention and carefulness that the use of this propellant requires: strict and severe procedures have been drawn up to avoid any kind of accident. Clearly, these procedures bring as a direct consequence a high level of stress, deriving by the fact that any accident could have serious implications, high expense of time and money, hand out to guarantee high level of safety. Due to all these aspects, since 2011 the REACH regulation tried to limit the use of hydrazine and other carcinogenic compounds, pushing towards the development of more sustainable and cheaper technologies. \\
+
+\section{Green Propellants}
+
+To reduce air pollution during rocket launches and all the pollution induced by dangerous compounds managing, a lot of space propellants that are more "environmentally friendly" have been produced. These  \textit{Green Propellants} have a high favorability in terms of operability, cost efficiency, performance, and physicochemical properties. Their low-hazard and low-toxicity characteristics make them very manageable during various phases of spacecraft development, launch, and operations, guaranteeing in this way safer handling and storability compared with hydrazine. \\
+Moreover, these properties open a lot of opportunities, mostly in terms of economic saving under a lot of different aspects. First of all, simpler propellants are cheaper, so the first kind of advantage is a direct economic saving. Furthermore, the related costs are lower, on one side because there is no need to invest huge amount of money in sophisticated protective barriers (and with barriers, is intended a huge amount of devices, from the human suits to the redundant industrial plant, made ad hoc to avoid casualties with a particular compound), and on the other side the propulsive system itself can be realized with common materials, avoiding the research of exoteric ones. Moreover, the design of the propulsive plant will be easier, since security devices will be always present but less complicated and stringent, leading also to a weight reduction. \\
+The last important aspect that it is worth to be underlined concerns the economic savings related to the launch phase. The use of less dangerous propellants allows to have more flexible schedules or, more simply, a reduction of time needed for the transportation and the loading on the rocket, since the logistic results simplified. Also the loading procedures are less restrictive, allowing parallel activities in the surrounding environment, speeding up all the launch preparation phase.\\ 
+Thanks to all of these aspects, it is possible to declare with confidence that choose a green propellant will lead a significant economic benefit, beyond an environmental benefit. \\ 
+In the following part of the chapter, the most promising technologies will be briefly presented. \\
+
+\subsection{Electric Propulsion}
+
+Electric propulsion is a class of propulsion systems which exploits electric power to accelerate the propellant using electric or magnetic fields. It is intrinsecally different from chemical propulsion due to the principle on which it is based. The total impulse of a propulsive system is defined as: 
+
+\begin{equation}
+I_{tot}=I_{sp}*M_{tot}
+\end{equation}
+
+and the specific impulse is described from:
+
+\begin{equation}
+I_{sp}=\frac{T}{\dot{m}}
+\end{equation}
+
+For what concerns the total impulse the order of magnitude is more or less the same for chemical and electric propulsion, but the nature of how it is produced is completely opposite. In chemical propulsion what plays the main role is the mass discharged, because, since the rate at which the energy can be provided to the propellant is independent by the propellant mass itself, it is allowed to reach very high levels of thrust and power. Chemical propulsion is considered "energy limited", due to the fact that a fixed amount of energy per unit mass is available. On the contrary, electric propulsion bases its major contribute on the specific impulse, because, since the $\dot{m}$ is small, it results very high. Unfortunately, since the rate at which the power is transmitted depends on the available mass, thrust levels do not result so high, and so its thrust-over-mass ratio is low. Due to this reason, electric propulsion devices operate for longer time intervals than chemical propulsion. \\ %{CITA IL SITO DELL'ESA CHEMICAL VS ELECTRICAL} 
+From the presented characteristics is it possible to deduce that the perfect application for electric propulsion would be on satellites: they do not require high levels of thrust, and they need a propulsive system which can be loaded and still work for several years. Electric systems fit perfectly in these requirements, and could allow a significant space saving as it can be seen in the following picture. \\ %{CITA CHALLENGES AND ECONOMIC BENEFITS OF GREEN PROPELLANTS FOR SATELLITES APPLICATIONS}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.1\textwidth]{electric_propulsion_savings.png}
+\caption{Electric Propulsion Saving}
+\end{figure}
+
+In the past it has been very undervalued due to the insufficient electrical power on-board, but, since in recent times the electrical power level is significantly increased, it has been reconsidered up to use it on satellites of european missions like ARTEMIS, Bepi Colombo, Alpha Sat, and so on. \\
+The most promising technologies, which have already reached a TRL 8-9, are the following:
+\begin{itemize}
+\item \textit{Hall Effect Thruster (HET)}: it is a ion-thruster which exploits the electromagnetic Hall effect. Electrons are emitted by a cathode and trapped in a magnetic field to ionize a propellant and create plasma. This plasma is then accelerated through an electric field, producing thrust. %{CITA SITO HALL EFFECT THRUSTER}
+\item \textit{Gridded Ion Engine (GIE)}: it is a ion-thruster in which some electrodes positioned at the downstream end of the thruster produce a static electric field, which accelerates the ions. The latter are then expelled by a set of apertures which creates thousand of ion jets. The interesting factor of this solution is that while a chemical rocket's top speed is limited by the thermal capability of the rocket nozzle, the ion thruster's top speed is limited by the voltage that is applied to the ion optics, which is theoretically unlimited. %{CITA SITO}
+\item\textit{High Efficiency Multistage Plasma Thruster (HEMPT)}: the basic concept is that several permanent periodic magnets (PPMs) are aimed to confine plasma. These magnet surround a discharge channel of cylindrical symmetry. At the bottom of the channel is present an anode, on which is applied a constant discharge voltage; moreover, at the bottom is also placed the neutral gas (usually xenon) inlet which is the supply for the propulsion device. Outside of the discharge channel, a cathode provides electrons as primary source for the plasma discharge and neutralizes the ions expelled from the thruster. %{CITA SITO}
+\end{itemize}
+
+\subsection{Chemical Propulsion}
+
+Against common thinking, also between chemical compounds is it possible to find some that can be considered \textit{Green}, or, at least, less pollutant than hydrazine. They can be both monopropellant and bipropellant, or the same compound can be used in both the ways. The most promising discoveries can be classified in three categories: Energetic Ionic Liquids, Nitrous Oxide and Hydrogen Peroxide. 
+
+\subsubsection{Energetic Ionic Liquids}
+
+Energetic Ionic Liquids are composed by oxidizer salts dissolved in aqueous solutions (Iconic Liquids, ILs) mixed with Iconic fuels (IF) or molecular fuel (MF) forming a pre-mixed propellant. %{CITA REVIEW OF STATE-OF-ART GREEN MONOPROPELLANTS: FOR PROPULSION...} 
+They need to possess high energy density, often found in materials with large positive heat of formation. This leads to a high combustion chamber temperature and high specific impulse, which is a measure of the fuel's efficiency. \\ %{CITA Recent Developments in the Field of Energetic Ionic Liquids}
+Moreover, it is important to underline that this kind of mixtures could be highly reactive so, depending on the operating conditions, could react both as a deflagrating compound, with a subsonic velocity, producing just hot gases or as a detonating compound, decomposing through a shockwave at supersonic speeds.\\
+Anyway, the aim of the ILs production was to find a non-volatile and reusable solvent for synthetic applications, in pair with the developing of new electrolytes. In general, the intrinsic properties of ILs are: low vapour pressures, high thermal stability and low melting point, which make them the ideal candidates for minimizing hazardous conditions associated with handling, processing and transporting of explosive materials. \\ %{CITA Recent Developments in the Field of Energetic Ionic Liquids}
+As been proved that methanol used to control the burning rate and ammonium nitrate as a stabilizer have a good performance degree. \\ %{CITA REVIEW OF STATE-OF-ART GREEN MONOPROPELLANTS: FOR PROPULSION...} 
+
+\subsubsection{Nitrous Oxide}
+
+Nitrous oxide can be divided into two subcategories: 
+
+\begin{itemize}
+\item \texttt{Nitro compounds}: organic substances containing dinitrogen monoxide group (f.e. $CH_3NO_2$);
+\item \texttt{Oxides of Nitrogen}: can be used for bipropellant systems and, among them, are considered $NO,NO_2, N_2O, N_2O_3, N_2O_4, N_2O_5$;
+\end{itemize}
+
+Among all these classes of compounds, only liquid $NO_x$ monopropellants can be considered as green propellants, and, for space applications, only $NO_2$ arouses some interest. \\
+In fact it can be used alone, as a bipropellant liquid, or as a group inside more complex moleculas as in the case of ADN. \\
+If it is used as a pure molecule it shows up as a colorless, non-toxic, liquefied gas with a slightly sweet taste and odor. It can be used both as a monopropellant and as a bipropellant. One of its great advantages is that it is non-corrosive, so it can be used with common structural materials; moreover, it is stable and inert at room temperatures. When it decomposes thanks the help of a catalyst, the reaction products are: $36.3\%O_2 + 63.7\%N_2$, which is very similar to air. For this reason it is classified as a green propellant. \\
+For space propulsion it is very attractive thanks to the following characteristics: 
+
+\begin{itemize}
+\item can be stored liquid ($\rho$ = 745 $\frac{kg}{m^3}$) with a vapor pressure of 52 bar;
+\item decomposes exothermically with adiabatic decomposition temperature around 1913K;
+\item can be used as an oxygen source, which can burn a wide variety of fuels;
+\end{itemize}
+ 
+%{CITA NITROUS OXIDE AS A ROCKET PROPELLANT}
+
+\subsubsection{ADN}
+
+The most promising application of nitrous oxide is bonded with other molecules to create the ADN (ammonium dinitramide), which is a solid salt dissolved in water with the addition of some stabilizers and it is used as oxidizer inside solid rocket motors.\\ 
+It is a stable, non-toxic, white and ionic substance, composed by ammonium cation and dinitramide anion. The absence of chlorine reduces the environmental impact and makes it desirable for smokeless propellants. Thanks to its high burning temperature, it has a very high specific impulse (230 s) and, conjugated which its high density, it makes it very interesting for space propulsion applications.\\
+Moreover, another great advantage is that the propulsive plant sized on the use of hydrazine can be recycled for the ADN, with minor modifications, so the exact propellant can be chosen at the very last moment with any kind of consequence. \\
+Unfortunately, this propellant needs to be pre-heated and this requires energy. In addition to that, to guarantee this high specific impulse it is needed to have a very high combustion chamber temperature. High combustion chamber temperature, means that the materials required have to be performing and, so, expensive. \\ 
+
+\subsubsection{Water Propulsion}
+
+Water propulsion exploits semi-electric thrusters. Thanks to electrolysis the water molecule is divided into pure oxygen and pure hydrogen: 
+\begin{equation}
+H_2O \rightleftharpoons H_2 + \frac{1}{2} O_2
+\end{equation}
+
+Then, hydrogen and oxygen are burned exothermically to produce thrust. In this kind of propulsion, the propellant is produced slowly during the time, and then it is burnt all in one moment, when needed; then the electrolysis process starts again. \\
+The great advantage of this kind of propulsion is that the monopropellant used is just water, so it is very cheap and safe during all the phases of the launch. \\ 
+Moreover, the realization of the thruster consists only in the adaptation of an already existing combustion chamber, with passive ignition which operates with a stoichiometric mixture of gases. \\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.1\textwidth]{water_propulsion.png}
+\caption{Electric Propulsion Saving}
+\end{figure}
+
+\section{Objectives}
+
+The main objective of this Master Thesis is to describe the design and the building procedures of a simple, green, lab-scale test bench for the test of the hydrogen peroxide catalysis. The tests will be performed with a progressively growing concentration, starting from 10\% until 87.5\% in the very last stages of the tests, with a flow rate limited to 9 mL/min.\\ 
+All the aspects of this procedure will be showed, paying more attention on some central components as the injector.\\
+The principal scope of this test bench is to try catalyst which have aluminum oxide as support material and platinum as active phase, deepening the aspect of catalyst deactivation caused by the HTP stabilizer pollution. The initial configuration foresees a catalyst under the form of pellet with 95\% of aluminum oxide ($Al_2O_3$) as support and 5\% of platinum (Pt) as active phase. Successive studies will be conducted varying the platinum percentage, the platinum particles size and the active phase and the support, adding for example silicium to limit the phenomena of sintering. Moreover, it will be interesting to investigate different geometries, starting from pellet and then testing also monolith and foam. \\
+In addition to that, in the present work will be presented also the data acquisition software, LabView, and the procedure devoted to the catalyst production.\\
+
+\section{Plan of the Work}
+
+The present work of Thesis will be structured as shown below:
+
+\begin{itemize}
+\item Chapter 2: the main features and properties of hydrogen peroxide are presented, starting from an overview about its historical background and ending with the main procedures and indications on how to manage it;
+\item Chapter 3: the experimental rig is shown, detailing its components and the building process;
+\item Chapter 4: the data acquisition apparatus is presented, lighting the decision process about the variables and the timings;
+\item Chapter 5: the catalyst production process is shown, going in deep on the various types of catalysts and on the procedures followed;
+\item Chapter 6: the results of the test bench proves are presented;
+\item Chapter 7: conclusions and further developments;
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
